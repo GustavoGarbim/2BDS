@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace ProjetoPrizzaria
 {
     class Conexao
     {
-        MySqlConnection con = new MySqlConnection("Data Source=localhost;Initial Catalog=BDPizzaria1;user=root;pwd=12345678");
+        MySqlConnection con = new MySqlConnection("Data Source=localhost;Initial Catalog=dbpizza;user=root;pwd=12345678");
 
         public static string msg;
 

@@ -36,9 +36,9 @@
             this.txtValorPizza = new System.Windows.Forms.TextBox();
             this.grpOpcionais = new System.Windows.Forms.GroupBox();
             this.chkBorda = new System.Windows.Forms.CheckBox();
-            this.chkTempero = new System.Windows.Forms.CheckBox();
-            this.chkCatupiry = new System.Windows.Forms.CheckBox();
             this.chkCebola = new System.Windows.Forms.CheckBox();
+            this.chkCatupiry = new System.Windows.Forms.CheckBox();
+            this.chkTempero = new System.Windows.Forms.CheckBox();
             this.dgvPedido = new System.Windows.Forms.DataGridView();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
@@ -127,15 +127,15 @@
             this.chkBorda.Text = "Borda Recheada";
             this.chkBorda.UseVisualStyleBackColor = true;
             // 
-            // chkTempero
+            // chkCebola
             // 
-            this.chkTempero.AutoSize = true;
-            this.chkTempero.Location = new System.Drawing.Point(119, 46);
-            this.chkTempero.Name = "chkTempero";
-            this.chkTempero.Size = new System.Drawing.Size(108, 17);
-            this.chkTempero.TabIndex = 11;
-            this.chkTempero.Text = "Tempero do Chef";
-            this.chkTempero.UseVisualStyleBackColor = true;
+            this.chkCebola.AutoSize = true;
+            this.chkCebola.Location = new System.Drawing.Point(6, 46);
+            this.chkCebola.Name = "chkCebola";
+            this.chkCebola.Size = new System.Drawing.Size(111, 17);
+            this.chkCebola.TabIndex = 12;
+            this.chkCebola.Text = "Cebola sem choro";
+            this.chkCebola.UseVisualStyleBackColor = true;
             // 
             // chkCatupiry
             // 
@@ -147,15 +147,15 @@
             this.chkCatupiry.Text = "Catupiry Original";
             this.chkCatupiry.UseVisualStyleBackColor = true;
             // 
-            // chkCebola
+            // chkTempero
             // 
-            this.chkCebola.AutoSize = true;
-            this.chkCebola.Location = new System.Drawing.Point(6, 46);
-            this.chkCebola.Name = "chkCebola";
-            this.chkCebola.Size = new System.Drawing.Size(111, 17);
-            this.chkCebola.TabIndex = 12;
-            this.chkCebola.Text = "Cebola sem choro";
-            this.chkCebola.UseVisualStyleBackColor = true;
+            this.chkTempero.AutoSize = true;
+            this.chkTempero.Location = new System.Drawing.Point(119, 46);
+            this.chkTempero.Name = "chkTempero";
+            this.chkTempero.Size = new System.Drawing.Size(108, 17);
+            this.chkTempero.TabIndex = 11;
+            this.chkTempero.Text = "Tempero do Chef";
+            this.chkTempero.UseVisualStyleBackColor = true;
             // 
             // dgvPedido
             // 
@@ -256,6 +256,7 @@
             this.Controls.Add(this.cmbTamanhoPizza);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.grpOpcionais.ResumeLayout(false);
             this.grpOpcionais.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).EndInit();
