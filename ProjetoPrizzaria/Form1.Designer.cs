@@ -47,7 +47,7 @@
             this.txtValorPagar = new System.Windows.Forms.TextBox();
             this.lblPesquisar = new System.Windows.Forms.Label();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.grpOpcionais.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).BeginInit();
             this.SuspendLayout();
@@ -164,6 +164,7 @@
             this.dgvPedido.Name = "dgvPedido";
             this.dgvPedido.Size = new System.Drawing.Size(532, 150);
             this.dgvPedido.TabIndex = 14;
+            this.dgvPedido.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgvPedido_MouseDoubleClick);
             // 
             // btnSalvar
             // 
@@ -173,6 +174,7 @@
             this.btnSalvar.TabIndex = 15;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnSair
             // 
@@ -225,20 +227,22 @@
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(100, 20);
             this.txtPesquisar.TabIndex = 21;
+            this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged_1);
             // 
-            // textBox5
+            // txtCodigo
             // 
-            this.textBox5.Location = new System.Drawing.Point(156, 46);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(58, 20);
-            this.textBox5.TabIndex = 22;
+            this.txtCodigo.Location = new System.Drawing.Point(156, 46);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(58, 20);
+            this.txtCodigo.TabIndex = 22;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 680);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.lblPesquisar);
             this.Controls.Add(this.txtValorPagar);
@@ -285,7 +289,7 @@
         private System.Windows.Forms.TextBox txtValorPagar;
         private System.Windows.Forms.Label lblPesquisar;
         private System.Windows.Forms.TextBox txtPesquisar;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCodigo;
     }
 }
 
